@@ -1,5 +1,6 @@
-# Les 1
+# Oefeningen les 1
 
-Dit bestand is een plaatshouder zodat deze map niet leeg is.
-Plaats in deze map de bestanden van het opdrachtbestand voor deze week.
-
+- [oefening1](Oefening%201)
+- [oefening2](Oefening%202)
+- [oefening3](Oefening%203)
+- [oefening4](Oefening%204)
