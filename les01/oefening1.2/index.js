@@ -1,4 +1,4 @@
-let aantalPriem = 1000005;
+let aantalPriem = 10000;
 let positie = 33;
 
 function PriemgetallenInArray(priemgetallen) {
