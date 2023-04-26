@@ -116,3 +116,20 @@ const klas = [
 ];
 
 console.log(klas);
+
+//Deel 2
+function maakKlas(aantal) {
+	let klas = [];
+	for (let i = 1; i <= aantal; i++) {
+		let naam = lettergrepen[Math.floor(Math.random() * lettergrepen.length)] + ' ' + lettergrepen[Math.floor(Math.random() * lettergrepen.length)];
+		let nummer = 'NR-' + (i < 11 ? '0' : '') + i;
+		klas.push({nummer: nummer, naam: naam});
+	}
+	return klas;
+}
+
+let klasAvond = maakKlas(11, 'avond');
+let klasDag = maakKlas(21, 'dag');
+
+console.log(klasAvond);
+console.log(klasDag);
