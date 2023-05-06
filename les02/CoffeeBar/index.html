@@ -58,47 +58,52 @@
       <nav class="me-5">
         <div class="p-3">
           <i class="bi-person"></i>
-          <button type="button" class="btn btn-primary mb-1" id="offcanvasRight"><i class="bi-bag"></i><span
-            class="badge text-bg-secondary text-primary">4</span></button>
-
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-              <h4 id="offcanvasRightLabel">🛒 Shopping cart</h4>
-            </div>
-            <div class="offcanvas-body">
-              <div class="offcanvas-body">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <p>Perspiciatis
-                      minima nesciunt dolorem!</p>
-                    <p>€15.00</p>
-                    <p class="text-end">x1 €15.00</p>
-                  </li>
-                  <li class="list-group-item">
-                    <p>Perspiciatis
-                      minima nesciunt dolorem!</p>
-                    <p>€12.00</p>
-                    <p class="text-end">x2 €24.00</p>
-                  </li>
-                  <li class="list-group-item">
-                    <p>Perspiciatis
-                      minima nesciunt dolorem!</p>
-                    <p>€21.00</p>
-                    <p class="text-end">x1 €21.00</p>
-                  </li>
-                  <li class="list-group-item text-end">
-                    <p>total €58.00</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
+          <button type="button" class="btn btn-primary mb-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"><i class="bi bi-bag"></i>
+            <span class="badge text-bg-secondary text-primary">4</span>
+          </button>
         </div>
       </nav>
     </nav>
   </header>
   <main>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas-body">
+          <div class="offcanvas-body">
+             <div class="offcanvas-body">
+                <ul class="list-group">
+                   <li class="list-group-item">
+                      <p>Perspiciatis
+                         minima nesciunt dolorem!</p>
+                      <p>€15.00</p>
+                      <p class="text-end">x1 &nbsp;&nbsp;&nbsp;&nbsp;€15.00</p>
+                   </li>
+                   <li class="list-group-item">
+                      <p>Perspiciatis
+                         minima nesciunt dolorem!</p>
+                      <p>€12.00</p>
+                      <p class="text-end">x2&nbsp;&nbsp;&nbsp;&nbsp; €24.00</p>
+                   </li>
+                   <li class="list-group-item">
+                      <p>Perspiciatis
+                         minima nesciunt dolorem!</p>
+                      <p>€21.00</p>
+                      <p class="text-end">x1&nbsp;&nbsp;&nbsp;&nbsp; €21.00</p>
+                   </li>
+                   <li class="list-group list-group-item-dark text-end">
+                      <p class="me-2 mt-3">total&nbsp;&nbsp;&nbsp;&nbsp; €58.00</p>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+      </div>
+    </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
