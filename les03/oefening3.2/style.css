@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.controls {
+    display: flex;
+    font-size: 3em;
+    margin: 1.5em;
+}
+
+.controls i {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.controls i:hover {
+    color: darkgray;
+}
