@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+        <nav class="navbar navbar-light">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo2.png" width="300" height="100" alt="Wine & Co">
+                    </a>
+                </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white fs-5" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fs-5" href="#">Where</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white fs-5" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Witte wijn</a></li>
+                                    <li><a class="dropdown-item" href="#">Rode wijn</a></li>
+                                    <li><a class="dropdown-item" href="#">Rosé</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fs-5" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="me-5">
+                <div class="p-3">
+                    <button type="button" class="btn text-white mb-1" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi-person text-white"></i>
+                        <span class="text-white">inloggen</span>
+                    </button>
+                    <button type="button" class="btn text-white mb-1" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-bag"></i>
+                        <span class="text-white">4</span>
+                    </button>
+                </div>
+            </nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slider1.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider2.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider3.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider4.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="text-center pt-5 pb-5">
+            <h2>Where we get our Wine's</h2>
+            <h3 class="pt-3">Choose from more than 1000 flavors</h3>
+            <p>DISCOVER OUR EXTENSIVE RANGE OF DELICIOUS WINES PER WINE COUNTRY</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 pb-5 pt-0 p-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/france.jpg" class="" alt="">
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-danger" type="button">France</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/portugal.jpg" class="align-items-center mw-75" alt="">
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-danger" type="button">Portugal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/spain.jpg" class="" alt="">
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-danger" type="button">Spain</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center pb-5">
+            <h2>Our Shop</h2>
+            <h3 class="pt-3">We have multiple choices</h3>
+        </div>
+
+        <div class="WineW">
+            <h4 class="text-center">White Wine's</h4>
+            <div class="container text-center pb-5">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <p>2022 Tiberius Vin de Pays d'Oc Grenache - Viognier</p>
+                        <img class="ww1p" src="img/ww1.jpg" alt="">
+                        <p>Prijs:€ 6,85</p>
+                        <button class="btn btn-dark" type="button">Add to cart</button>
+                    </div>
+                    <div class="col">
+                        <p>2022 Le Bottle LE WHITE - Vin de Pays d'Oc Grenache - Viognier - Sauvignon Blanc </p>
+                        <img class="ww2p" src="img/ww2.jpg" alt="">
+                        <p>Prijs:€ 11,35</p>
+                        <button class="btn btn-dark" type="button">Add to cart</button>
+                    </div>
+                    <div class="col">
+                        <p>2022 Simonsig Rosé Chenin Blanc/Pinotage </p>
+                        <img class="ww3p" src="img/ww3.jpg" alt="">
+                        <p>Prijs:€ 8,99</p>
+                        <button class="btn btn-dark" type="button">Add to cart</button>
+                    </div>
+                </div>
+                <button class="btn btn-danger" type="button">More</button>
+            </div>
+        </div>
+
+        <div class="RedW">
+            <h4 class="text-center">Red Wine's</h4>
+            <div class="container text-center pt-3 pb-5">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <p>2021 Les Sensibles Vin de Pays d'Oc Syrah</p>
+                        <img class="rw1p" src="img/rw1.jpg" alt="">
+                        <p>Prijs:€ 9,99</p>
+                        <button class="btn btn-dark" type="button">Add to cart</button>
+                    </div>
+                    <div class="col">
+                        <p>2021 Epicuro Conica Montepulciano d'Abruzzo</p>
+                        <img class="rw2p" src="img/rw2.jpg" alt="">
+                        <p>Prijs:€ 17,85</p>
+                        <button class="btn btn-dark" type="button">Add to cart</button>
+                    </div>
+                    <div class="col">
+                        <p>2021 Epicuro Conica - SCREWCAP Montepulciano d'Abruzzo SCREWCAP</p>
+                        <img class="rw3p" src="img/rw3.jpg" alt="">
+                        <p>Prijs:€ 12,68</p>
+                        <button class="btn btn-dark" type="button">Add to cart</button>
+                    </div>
+                </div>
+                <button class="btn btn-danger" type="button">More</button>
+            </div>
+        </div>
+
+        <div class="RW pb-5">
+            <h4 class="text-center">Rosé</h4>
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <p>2021 Tiberius Vin de Pays d'Oc Cinsault, Grenache Noir</p>
+                        <img class="row1p" src="img/row1.jpg" alt="">
+                        <p>Prijs:€ 7,55</p>
+                        <button class="btn btn-dark" type="button">Add to cart</button>
+                    </div>
+                    <div class="col">
+                        <p>2022 Tiberius Vin de Pays d'Oc Cinsault, Grenache Noir </p>
+                        <img class="row2p" src="img/row2.jpg" alt="">
+                        <p>Prijs:€ 18,99</p>
+                        <button class="btn btn-dark" type="button">Add to cart</button>
+                    </div>
+                    <div class="col">
+                        <p>2022 Casa Santiago Viña Requingua (Screwcap) Rosado</p>
+                        <img class="row3p" src="img/row3.jpg" alt="">
+                        <p>Prijs:€ 12,45</p>
+                        <button class="btn btn-dark" type="button">Add to cart</button>
+                    </div>
+                </div>
+                <button class="btn btn-danger" type="button">More</button>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="img/banner.jpg" alt="">
+        </div>
+
+        <div class="text-center pt-5">
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mx-auto">
+                        <div class="container mt-3">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 mb-5 border-end border-light border-3">
+                                    <iframe class="ms-5"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12786.613753884885!2d4.343237108967312!3d50.850935144956196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47ae74ac9e1%3A0xb3bee3c82b85dc79!2sKunstberg!5e0!3m2!1snl!2sbe!4v1683122470135!5m2!1snl!2sbe"
+                                        width="95%" height="450" title="" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <form>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control " placeholder="Name"
+                                                id="exampleInputName">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control " placeholder="Email"
+                                                id="exampleInputEmail">
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea class="form-control" placeholder="Message"
+                                                id="exampleInputMessage" rows="8"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="container-md  navbar navbar-light">
+            <p class="link-light"> <i class="bi bi-c-circle"></i>Wine &amp; Co - 2023</p>
+            <p class="link-light"> <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+            </p>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

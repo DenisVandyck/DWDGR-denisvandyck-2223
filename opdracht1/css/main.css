@@ -1,0 +1,78 @@
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.navbar.navbar-light {
+    background-color: rgb(137, 10, 10);
+}
+
+.btn.btn-danger {
+    background-color: rgb(137, 10, 10);
+}
+
+.footer {
+    background-color: rgb(137, 10, 10);
+}
+
+.btn.btn-primary.w-100 {
+    background-color: rgb(137, 10, 10);
+}
+
+.ww1p {
+    max-width: 100px;
+    padding: 0px;
+}
+
+.ww2p {
+    max-width: 100px;
+    padding: 0px;
+}
+
+.ww3p {
+    max-width: 100px;
+    padding: 0px;
+}
+
+.rw1p {
+    max-width: 100px;
+    padding: 0px;
+}
+
+.rw2p {
+    max-width: 100px;
+    padding: 0px;
+}
+
+.rw3p {
+    max-width: 100px;
+    padding: 0px;
+}
+
+.row1p {
+    max-width: 100px;
+    padding: 0px;
+}
+
+.row2p {
+    max-width: 100px;
+    padding: 0px;
+}
+
+.row3p {
+    max-width: 100px;
+    padding: 0px;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 800px;
+    max-height: 100%;
+    vertical-align: middle;
+}
