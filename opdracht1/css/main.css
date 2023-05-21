@@ -9,6 +9,7 @@
 
 .btn.btn-danger {
     background-color: rgb(137, 10, 10);
+    margin-top: 10px;
 }
 
 .footer {
@@ -66,13 +67,17 @@
 
 .banner {
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-color: #f1f1f1;
     text-align: center;
 }
 
 .banner img {
-    max-width: 800px;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     vertical-align: middle;
+}
+
+.about-us.pb-3{
+    margin-left: 25px;
 }

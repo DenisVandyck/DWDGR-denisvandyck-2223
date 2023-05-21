@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wine</title>
+    <title>Wine &amp; Co</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -34,21 +34,24 @@
                                 <a class="nav-link active text-white fs-5" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white fs-5" href="#">Where</a>
+                                <a class="nav-link text-white fs-5" href="#where">Where</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white fs-5" href="#" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle text-white fs-5" href="#shop" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Shop
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Witte wijn</a></li>
-                                    <li><a class="dropdown-item" href="#">Rode wijn</a></li>
-                                    <li><a class="dropdown-item" href="#">Rosé</a></li>
+                                    <li><a class="dropdown-item" href="#white">White wijn</a></li>
+                                    <li><a class="dropdown-item" href="#red">Red wijn</a></li>
+                                    <li><a class="dropdown-item" href="#ros">Rosé</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white fs-5" href="#">Contact</a>
+                                <a class="nav-link text-white fs-5" href="#about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fs-5" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -58,11 +61,11 @@
             <nav class="me-5">
                 <div class="p-3">
                     <button type="button" class="btn text-white mb-1" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi-person text-white"></i>
+                        data-bs-target="#offcanvasRight"><i class="bi-person text-white"></i>
                         <span class="text-white">inloggen</span>
                     </button>
                     <button type="button" class="btn text-white mb-1" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-bag"></i>
+                        data-bs-target="#offcanvasRight"><i class="bi bi-bag"></i>
                         <span class="text-white">4</span>
                     </button>
                 </div>
@@ -109,7 +112,7 @@
             </button>
         </div>
 
-        <div class="text-center pt-5 pb-5">
+        <div class="text-center pt-5 pb-5" id="where">
             <h2>Where we get our Wine's</h2>
             <h3 class="pt-3">Choose from more than 1000 flavors</h3>
             <p>DISCOVER OUR EXTENSIVE RANGE OF DELICIOUS WINES PER WINE COUNTRY</p>
@@ -148,13 +151,13 @@
             </div>
         </div>
 
-        <div class="text-center pb-5">
+        <div class="text-center pb-5" id="shop">
+            <i class="bi bi-bag-fill"></i>
             <h2>Our Shop</h2>
             <h3 class="pt-3">We have multiple choices</h3>
         </div>
-
         <div class="WineW">
-            <h4 class="text-center">White Wine's</h4>
+            <h4 class="text-center" id="white">White Wine's</h4>
             <div class="container text-center pb-5">
                 <div class="row align-items-start">
                     <div class="col">
@@ -164,7 +167,7 @@
                         <button class="btn btn-dark" type="button">Add to cart</button>
                     </div>
                     <div class="col">
-                        <p>2022 Le Bottle LE WHITE - Vin de Pays d'Oc Grenache - Viognier - Sauvignon Blanc </p>
+                        <p>2022 Le Bottle LE WHITE - Vin de Pays d'Oc Grenache</p>
                         <img class="ww2p" src="img/ww2.jpg" alt="">
                         <p>Prijs:€ 11,35</p>
                         <button class="btn btn-dark" type="button">Add to cart</button>
@@ -181,7 +184,7 @@
         </div>
 
         <div class="RedW">
-            <h4 class="text-center">Red Wine's</h4>
+            <h4 class="text-center" id="red">Red Wine's</h4>
             <div class="container text-center pt-3 pb-5">
                 <div class="row align-items-start">
                     <div class="col">
@@ -197,7 +200,7 @@
                         <button class="btn btn-dark" type="button">Add to cart</button>
                     </div>
                     <div class="col">
-                        <p>2021 Epicuro Conica - SCREWCAP Montepulciano d'Abruzzo SCREWCAP</p>
+                        <p>2021 Epicuro Conica - SCREWCAP Montepulciano</p>
                         <img class="rw3p" src="img/rw3.jpg" alt="">
                         <p>Prijs:€ 12,68</p>
                         <button class="btn btn-dark" type="button">Add to cart</button>
@@ -208,7 +211,7 @@
         </div>
 
         <div class="RW pb-5">
-            <h4 class="text-center">Rosé</h4>
+            <h4 class="text-center" id="ros">Rosé</h4>
             <div class="container text-center">
                 <div class="row align-items-start">
                     <div class="col">
@@ -234,15 +237,43 @@
             </div>
         </div>
 
+        <div class="About-us " id="about">
+            <div class="text-center">
+                <i class="bi bi-person-circle"></i>
+                <h2>About Us</h2>
+            </div>
+            <div class="about-us pb-3 pt-3">
+                <div class="row">
+                    <div class="col-lg-4 border-end border-1 mb-5">
+                        At Wine &amp; Co We are passionate about wine and would like to share that passion with
+                        you. Our website is your gateway to the fascinating world of wines, where we take you on a
+                        tasteful
+                        journey of discovery. Discover the art of winemaking
+                    </div>
+                    <div class="col-lg-8">
+                        We believe that winemaking is a true art form. On our website you will find extensive
+                        information
+                        about
+                        wine production, from the vineyard to the winery. We introduce you to the different grape
+                        varieties,
+                        the
+                        various wine regions and the passionate winemakers who create each bottle with care and
+                        dedication.
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="banner">
             <img src="img/banner.jpg" alt="">
         </div>
 
         <div class="text-center pt-5">
+            <i class="bi bi-telephone-fill"></i>
             <h2>Contact Us</h2>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="contact">
             <div class="row">
                 <div class="col-md-12">
                     <div class="mx-auto">
@@ -251,7 +282,7 @@
                                 <div class="col-sm-12 col-md-6 mb-5 border-end border-light border-3">
                                     <iframe class="ms-5"
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12786.613753884885!2d4.343237108967312!3d50.850935144956196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47ae74ac9e1%3A0xb3bee3c82b85dc79!2sKunstberg!5e0!3m2!1snl!2sbe!4v1683122470135!5m2!1snl!2sbe"
-                                        width="95%" height="450" title="" allowfullscreen="" loading="lazy"
+                                        width="600" height="450" title="" allowfullscreen="" loading="lazy"
                                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                                 <div class="col-sm-12 col-md-6">
