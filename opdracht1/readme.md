@@ -61,11 +61,11 @@ Zorg ervoor dat alle nodige vereisten werken zoals het hoort. Wanneer dit klaar 
 
 ## Checklist die je helpt bij het voorzien van de requirements
 
-- [ ] Javascript object met alle producten
-- [ ] Item toevoegen aan shopping cart
-- [ ] Item verwijderen van shopping cart
-- [ ] Hoeveelheid van items wijzigen
-- [ ] Berekenen van prijs
+- [x] Javascript object met alle producten
+- [x] Item toevoegen aan shopping cart
+- [x] Item verwijderen van shopping cart
+- [x] Hoeveelheid van items wijzigen
+- [x] Berekenen van prijs
 - [ ] Checkout systeem (contactgegevens, betaalwijze, leverdetails)
 - [ ] Opslaan van shopping cart
 - [ ] Opslaan van checkout gegevens (contactgegevens, betaalmanier, leverdetails)

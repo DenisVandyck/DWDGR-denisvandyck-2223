@@ -20,6 +20,22 @@
     background-color: rgb(137, 10, 10);
 }
 
+.bg-danger {
+    background-color: rgb(137, 10, 10);
+}
+
+#red {
+    background-color: rgb(137, 10, 10);
+}
+
+#white {
+    background-color: rgb(137, 10, 10);
+}
+
+#ros {
+    background-color: rgb(137, 10, 10);
+}
+
 .ww1p {
     max-width: 100px;
     padding: 0px;
@@ -78,6 +94,77 @@
     vertical-align: middle;
 }
 
-.about-us.pb-3{
+.about-us.pb-3 {
     margin-left: 25px;
+}
+
+.cart-row {
+    padding: 10px;
+}
+
+.cart-column {
+    padding-right: 15px;
+    border-bottom: 1px solid black;
+}
+
+.cart-item.cart-header.cart-column {
+    padding-right: 295px;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.btn-purchase {
+    align-items: center;
+    margin: 40px auto 80px auto;
+}
+
+.products-container {
+    padding-top: 65px;
+    margin-top: 65px;
+    max-width: 650px;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgb(137, 10, 10);
+    margin: 0 auto;
+}
+
+.product-titel {
+    width: 45%;
+}
+
+.prijs {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.aantal {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.totaal {
+    width: 10%;
+    display: flex;
+    align-items: center;
 }

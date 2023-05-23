@@ -37,8 +37,8 @@
                                 <a class="nav-link text-white fs-5" href="#where">Where</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white fs-5" href="#shop" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle text-white fs-5" href="#shop"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Shop
                                 </a>
                                 <ul class="dropdown-menu">
@@ -61,13 +61,15 @@
             <nav class="me-5">
                 <div class="p-3">
                     <button type="button" class="btn text-white mb-1" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasRight"><i class="bi-person text-white"></i>
+                        data-bs-target="#offcanvasLeft"><i class="bi-person text-white"></i>
                         <span class="text-white">inloggen</span>
                     </button>
-                    <button type="button" class="btn text-white mb-1" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasRight"><i class="bi bi-bag"></i>
-                        <span class="text-white">4</span>
-                    </button>
+                    <div class="cart">
+                        <a href="bag.html" class="btn text-white mb-1">
+                            <i class="bi bi-bag"></i>
+                            <span class="number">0</span>
+                        </a>
+                    </div>
                 </div>
             </nav>
 
@@ -75,6 +77,27 @@
     </header>
 
     <main>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title text-center" id="offcanvasLeftLabel">Login:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="offcanvas-body">
+                    <form>
+                        <p><i class="bi bi-person-fill"></i> Your name:</p>
+                        <div class="mb-3">
+                            <input type="text" class="form-control " placeholder="Name" id="nlogin">
+                        </div>
+                        <p><i class="bi bi-envelope-fill"></i> Your e-mail:</p>
+                        <div class="mb-3">
+                            <input type="email" class="form-control " placeholder="Email" id="elogin">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -111,20 +134,18 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
         <div class="text-center pt-5 pb-5" id="where">
             <h2>Where we get our Wine's</h2>
             <h3 class="pt-3">Choose from more than 1000 flavors</h3>
             <p>DISCOVER OUR EXTENSIVE RANGE OF DELICIOUS WINES PER WINE COUNTRY</p>
         </div>
-
         <div class="row row-cols-1 row-cols-md-3 g-4 pb-5 pt-0 p-5">
             <div class="col">
                 <div class="card h-100">
                     <img src="img/france.jpg" class="" alt="">
                     <div class="card-body">
                         <div class="d-grid gap-2">
-                            <button class="btn btn-danger" type="button">France</button>
+                            <button class="btn btn-danger land" type="button">France</button>
                         </div>
                     </div>
                 </div>
@@ -134,7 +155,7 @@
                     <img src="img/portugal.jpg" class="align-items-center mw-75" alt="">
                     <div class="card-body">
                         <div class="d-grid gap-2">
-                            <button class="btn btn-danger" type="button">Portugal</button>
+                            <button class="btn btn-danger land" type="button">Portugal</button>
                         </div>
                     </div>
                 </div>
@@ -144,99 +165,95 @@
                     <img src="img/spain.jpg" class="" alt="">
                     <div class="card-body">
                         <div class="d-grid gap-2">
-                            <button class="btn btn-danger" type="button">Spain</button>
+                            <button class="btn btn-danger land" type="button">Spain</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="text-center pb-5" id="shop">
             <i class="bi bi-bag-fill"></i>
             <h2>Our Shop</h2>
             <h3 class="pt-3">We have multiple choices</h3>
         </div>
         <div class="WineW">
-            <h4 class="text-center" id="white">White Wine's</h4>
+            <h4 class="text-center border border-dark border-1 text-white" id="white">White Wine's</h4>
             <div class="container text-center pb-5">
                 <div class="row align-items-start">
                     <div class="col">
-                        <p>2022 Tiberius Vin de Pays d'Oc Grenache - Viognier</p>
+                        <p class="shop-item-title">2022 Tiberius Vin de Pays d'Oc Grenache - Viognier</p>
                         <img class="ww1p" src="img/ww1.jpg" alt="">
                         <p>Prijs:€ 6,85</p>
-                        <button class="btn btn-dark" type="button">Add to cart</button>
+                        <a class="add-cart cart1 btn btn-dark" href="#">Add to cart</a>
                     </div>
                     <div class="col">
-                        <p>2022 Le Bottle LE WHITE - Vin de Pays d'Oc Grenache</p>
+                        <p class="shop-item-title">2022 Le Bottle LE WHITE - Vin de Pays d'Oc Grenache</p>
                         <img class="ww2p" src="img/ww2.jpg" alt="">
                         <p>Prijs:€ 11,35</p>
-                        <button class="btn btn-dark" type="button">Add to cart</button>
+                        <a class="add-cart cart2 btn btn-dark" href="#">Add to cart</a>
                     </div>
                     <div class="col">
-                        <p>2022 Simonsig Rosé Chenin Blanc/Pinotage </p>
+                        <p class="shop-item-title">2022 Simonsig Rosé Chenin Blanc/Pinotage </p>
                         <img class="ww3p" src="img/ww3.jpg" alt="">
                         <p>Prijs:€ 8,99</p>
-                        <button class="btn btn-dark" type="button">Add to cart</button>
+                        <a class="add-cart cart3 btn btn-dark" href="#">Add to cart</a>
                     </div>
                 </div>
-                <button class="btn btn-danger" type="button">More</button>
+                <button class="btn btn-danger more" type="button">More</button>
             </div>
         </div>
-
         <div class="RedW">
-            <h4 class="text-center" id="red">Red Wine's</h4>
+            <h4 class="text-center border border-dark border-1 text-white" id="red">Red Wine's</h4>
             <div class="container text-center pt-3 pb-5">
                 <div class="row align-items-start">
                     <div class="col">
-                        <p>2021 Les Sensibles Vin de Pays d'Oc Syrah</p>
+                        <p class="shop-item-title">2021 Les Sensibles Vin de Pays d'Oc Syrah</p>
                         <img class="rw1p" src="img/rw1.jpg" alt="">
                         <p>Prijs:€ 9,99</p>
-                        <button class="btn btn-dark" type="button">Add to cart</button>
+                        <a class="add-cart cart4 btn btn-dark" href="#">Add to cart</a>
                     </div>
                     <div class="col">
-                        <p>2021 Epicuro Conica Montepulciano d'Abruzzo</p>
+                        <p class="shop-item-title">2021 Epicuro Conica Montepulciano d'Abruzzo</p>
                         <img class="rw2p" src="img/rw2.jpg" alt="">
                         <p>Prijs:€ 17,85</p>
-                        <button class="btn btn-dark" type="button">Add to cart</button>
+                        <a class="add-cart cart5 btn btn-dark" href="#">Add to cart</a>
                     </div>
                     <div class="col">
-                        <p>2021 Epicuro Conica - SCREWCAP Montepulciano</p>
+                        <p class="shop-item-title">2021 Epicuro Conica - SCREWCAP Montepulciano</p>
                         <img class="rw3p" src="img/rw3.jpg" alt="">
                         <p>Prijs:€ 12,68</p>
-                        <button class="btn btn-dark" type="button">Add to cart</button>
+                        <a class="add-cart cart6 btn btn-dark" href="#">Add to cart</a>
                     </div>
                 </div>
-                <button class="btn btn-danger" type="button">More</button>
+                <button class="btn btn-danger more" type="button">More</button>
             </div>
         </div>
-
         <div class="RW pb-5">
-            <h4 class="text-center" id="ros">Rosé</h4>
+            <h4 class="text-center border border-dark border-1 text-white" id="ros">Rosé</h4>
             <div class="container text-center">
                 <div class="row align-items-start">
                     <div class="col">
-                        <p>2021 Tiberius Vin de Pays d'Oc Cinsault, Grenache Noir</p>
+                        <p class="shop-item-title">2021 Tiberius Vin de Pays d'Oc Cinsault, Grenache Noir</p>
                         <img class="row1p" src="img/row1.jpg" alt="">
                         <p>Prijs:€ 7,55</p>
-                        <button class="btn btn-dark" type="button">Add to cart</button>
+                        <a class="add-cart cart7 btn btn-dark" href="#">Add to cart</a>
                     </div>
                     <div class="col">
-                        <p>2022 Tiberius Vin de Pays d'Oc Cinsault, Grenache Noir </p>
+                        <p class="shop-item-title">2022 Tiberius Vin de Pays d'Oc Cinsault, Grenache Noir </p>
                         <img class="row2p" src="img/row2.jpg" alt="">
                         <p>Prijs:€ 18,99</p>
-                        <button class="btn btn-dark" type="button">Add to cart</button>
+                        <a class="add-cart cart8 btn btn-dark" href="#">Add to cart</a>
                     </div>
                     <div class="col">
-                        <p>2022 Casa Santiago Viña Requingua (Screwcap) Rosado</p>
+                        <p class="shop-item-title">2022 Casa Santiago Viña Requingua (Screwcap) Rosado</p>
                         <img class="row3p" src="img/row3.jpg" alt="">
                         <p>Prijs:€ 12,45</p>
-                        <button class="btn btn-dark" type="button">Add to cart</button>
+                        <a class="add-cart cart9 btn btn-dark" href="#">Add to cart</a>
                     </div>
                 </div>
-                <button class="btn btn-danger" type="button">More</button>
+                <button class="btn btn-danger more" type="button">More</button>
             </div>
         </div>
-
         <div class="About-us " id="about">
             <div class="text-center">
                 <i class="bi bi-person-circle"></i>
@@ -245,9 +262,11 @@
             <div class="about-us pb-3 pt-3">
                 <div class="row">
                     <div class="col-lg-4 border-end border-1 mb-5">
-                        At Wine &amp; Co We are passionate about wine and would like to share that passion with
-                        you. Our website is your gateway to the fascinating world of wines, where we take you on a
-                        tasteful
+                        At <strong>Wine &amp; Co</strong> We are passionate about wine and would like to share that
+                        passion with
+                        you. Our website is your gateway to the <strong>fascinating</strong> world of wines, where we
+                        take you on a
+                        <strong> tasteful</strong>
                         journey of discovery. Discover the art of winemaking
                     </div>
                     <div class="col-lg-8">
@@ -255,7 +274,7 @@
                         information
                         about
                         wine production, from the vineyard to the winery. We introduce you to the different grape
-                        varieties,
+                        <strong>varieties</strong>,
                         the
                         various wine regions and the passionate winemakers who create each bottle with care and
                         dedication.
@@ -312,14 +331,14 @@
 
     <footer class="footer">
         <nav class="container-md  navbar navbar-light">
-            <p class="link-light"> <i class="bi bi-c-circle"></i>Wine &amp; Co - 2023</p>
+            <p class="link-light"> <i class="bi bi-c-circle"></i>Wine &amp; Co - 2023 Denis Vandyck</p>
             <p class="link-light"> <i class="bi bi-facebook"></i>
                 <i class="bi bi-twitter"></i>
                 <i class="bi bi-instagram"></i>
             </p>
         </nav>
     </footer>
-
+    <script src="index.js" async></script>
 </body>
 
 </html>
